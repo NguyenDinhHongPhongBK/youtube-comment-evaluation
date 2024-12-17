@@ -1,0 +1,34 @@
+BACKEND
+  pip install virtualenv
+  virtualenv <myenv>
+  myenv\Scripts\activate
+  pip install django
+  django-admin startproject <backend>
+
+  python manage.py migrate
+  python manage.py runserver
+
+  python manage.py startapp base
+
+    pip install djangorestframework (in backend)
+    pip install django-cors-headers (in backend)
+    +) views
+    - from rest_framework.decorators import api_view
+    - from rest_framework.response import Response
+
+  python manage.py createsuperuser
+    Username : Phong
+    Email : nguyendinhhongphong12a1@gmail.com
+    password : 123456tyuiop
+
+  python manage.py makemigrations
+  python manage.py migrate  
+  pip install pillow
+
+
+  pip install djangorestframework-simplejwt
+
+
+FRONTEND
+  yarn add axios (frontend)
+  yarn add redux react-redux redux-thunk redux-devtools-extension @reduxjs/toolkit
